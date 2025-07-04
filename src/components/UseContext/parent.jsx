@@ -7,7 +7,7 @@ const Parent = () => {
     return (
         <>
             <div style={{minHeight: "200px", border: '2px solid red', padding: "25px"}}>
-            <h1>Parent Component 😂</h1>
+            <h1>Parent Component 😂 {context}</h1>
             <div>
                 <label htmlFor='pass'>To GrandChildren: </label>
                 <input type="text" name='pass' id='pass' onChange={(e) => setContext(e.target.value)} />

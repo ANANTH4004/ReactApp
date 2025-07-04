@@ -1,5 +1,6 @@
 import GrandChildOne from "./grandChildOne"
 const ChildOne = () => {
+    console.log("child Render")
     return (
         <>
             <h3>childOne Component 😂</h3>
