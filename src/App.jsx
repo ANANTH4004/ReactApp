@@ -4,11 +4,12 @@ import Student from './components/Student'
 import EventsExample from './components/EventsExample'
 import HooksExample from './components/HooksExample'
 import StudentLists from './components/StudentLists'
+import UseEffectHook from './components/useEffectHook'
 
 function App() {
   return (
     <>
-      <StudentLists />
+      <UseEffectHook />
     </>
   )
 }
