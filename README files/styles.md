@@ -58,3 +58,9 @@ React supports several ways to add styles:
 
 - [Vite CSS Pre-processors](https://vitejs.dev/guide/features.html#css-pre-processors)
 - [React Styling and CSS](https://react.dev/learn#styling-your-components)
+
+---
+
+**See also:**
+
+- [Install Tailwind CSS with React Router](https://tailwindcss.com/docs/installation/framework-guides/react-router)
