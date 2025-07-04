@@ -7,13 +7,12 @@ import StudentLists from './components/StudentLists'
 import UseEffectHook from './components/useEffectHook'
 import Parent from './components/UseContext/parent'
 import { Provider } from './components/UseContext/MyContext'
+import HttpExample from './components/Http/HttpExample'
 
 function App() {
   return (
     <>
-     <Provider>
-      <Parent />
-     </Provider>
+     <HttpExample />
     </>
   )
 }
