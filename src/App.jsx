@@ -5,11 +5,12 @@ import EventsExample from './components/EventsExample'
 import HooksExample from './components/HooksExample'
 import StudentLists from './components/StudentLists'
 import UseEffectHook from './components/useEffectHook'
+import Parent from './components/parent-child/Parent'
 
 function App() {
   return (
     <>
-      <UseEffectHook />
+      <Parent />
     </>
   )
 }
