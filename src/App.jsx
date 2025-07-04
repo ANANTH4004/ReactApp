@@ -5,12 +5,15 @@ import EventsExample from './components/EventsExample'
 import HooksExample from './components/HooksExample'
 import StudentLists from './components/StudentLists'
 import UseEffectHook from './components/useEffectHook'
-import Parent from './components/parent-child/Parent'
+import Parent from './components/UseContext/parent'
+import { Provider } from './components/UseContext/MyContext'
 
 function App() {
   return (
     <>
+     <Provider>
       <Parent />
+     </Provider>
     </>
   )
 }
