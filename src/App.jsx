@@ -11,6 +11,7 @@ import HttpExample from './components/Http/HttpExample'
 import BasicForm from './components/Forms/BasicForm'
 import { Route } from 'react-router-dom'
 import { Routes } from 'react-router-dom'
+import UseReducerHook from './components/useReducerHook'
 
 function App() {
   return (
@@ -24,8 +25,9 @@ function App() {
         <Route path="/github" element={<HttpExample />} />
       </Routes> */}
       {/* <Provider> */}
-      <UseEffectHook />
+      {/* <UseEffectHook /> */}
       {/* </Provider> */}
+      <UseReducerHook />
     </>
   )
 }
