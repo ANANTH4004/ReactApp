@@ -15,14 +15,18 @@ import { Routes } from 'react-router-dom'
 function App() {
   return (
     <>
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<Student />} />
         <Route path="/class" element={<ClassComponents />} />
         <Route path="/events" element={<EventsExample />} />
         <Route path="/hooks" element={<HooksExample />} />
         <Route path="/student" element={<StudentLists />} />
         <Route path="/github" element={<HttpExample />} />
-      </Routes>
+      </Routes> */}
+      {/* <Provider> */}
+      <Parent />
+      <HooksExample />
+      {/* </Provider> */}
     </>
   )
 }

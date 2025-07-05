@@ -6,7 +6,12 @@ function HooksExample() {
   })
   const [count, setCount] = useState(0)
   const increment = () => {
-    setCount(count + 1)
+    console.log('Increment called')
+    setCount((prev) => prev + 1)
+    setCount((prev) => prev + 1)
+    setCount((prev) => prev + 1)
+    setCount((prev) => prev + 1)
+    setCount((prev) => prev + 1)
   }
 
   const incrementAge = () => {
