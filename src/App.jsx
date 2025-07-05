@@ -24,8 +24,7 @@ function App() {
         <Route path="/github" element={<HttpExample />} />
       </Routes> */}
       {/* <Provider> */}
-      <Parent />
-      <HooksExample />
+      <UseEffectHook />
       {/* </Provider> */}
     </>
   )

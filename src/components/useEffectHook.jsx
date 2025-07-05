@@ -2,18 +2,19 @@ import { useEffect, useState, useRef } from 'react'
 import styles from '../styles/hooks.module.css'
 const UseEffectHook = () => {
   const [users, setUsers] = useState([])
+  const [count, setCount] = useState(0)
   const name = useRef(null)
   const phone = useRef(null)
   const username = useRef(null)
   const website = useRef(null)
   useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/users',{
+    fetch('https://jsonplaceholder.typicode.com/users', {
       method: 'GET',
       mode: 'cors', // enable CORS (default for cross-origin fetch)
       headers: {
-        'Accept': 'application/json',
-        'X-Custom-Header': 'my-custom-header-value'
-      }
+        Accept: 'application/json',
+        'X-Custom-Header': 'my-custom-header-value',
+      },
     }).then((response) => {
       response.json().then((data) => {
         console.log('inside use effect', data)
@@ -21,6 +22,10 @@ const UseEffectHook = () => {
       })
     })
   }, [])
+
+  useEffect(() => {
+    console.log('User effect is called:', count)
+  }, [count])
 
   const addNewUser = () => {
     const newUser = {
@@ -66,6 +71,7 @@ const UseEffectHook = () => {
           <button onClick={addNewUser}> Add New User</button>
         </div>
       </div>
+      <button onClick={() => setCount(1)}>SetCount</button>
     </>
   )
 }
