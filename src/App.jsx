@@ -8,11 +8,12 @@ import UseEffectHook from './components/useEffectHook'
 import Parent from './components/UseContext/parent'
 import { Provider } from './components/UseContext/MyContext'
 import HttpExample from './components/Http/HttpExample'
+import BasicForm from './components/Forms/BasicForm'
 
 function App() {
   return (
     <>
-     <HttpExample />
+      <BasicForm />
     </>
   )
 }
