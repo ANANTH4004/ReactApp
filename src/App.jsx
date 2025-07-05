@@ -9,11 +9,20 @@ import Parent from './components/UseContext/parent'
 import { Provider } from './components/UseContext/MyContext'
 import HttpExample from './components/Http/HttpExample'
 import BasicForm from './components/Forms/BasicForm'
+import { Route } from 'react-router-dom'
+import { Routes } from 'react-router-dom'
 
 function App() {
   return (
     <>
-      <BasicForm />
+      <Routes>
+        <Route path="/" element={<Student />} />
+        <Route path="/class" element={<ClassComponents />} />
+        <Route path="/events" element={<EventsExample />} />
+        <Route path="/hooks" element={<HooksExample />} />
+        <Route path="/student" element={<StudentLists />} />
+        <Route path="/github" element={<HttpExample />} />
+      </Routes>
     </>
   )
 }
