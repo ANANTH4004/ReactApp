@@ -12,6 +12,7 @@ import BasicForm from './components/Forms/BasicForm'
 import { Route } from 'react-router-dom'
 import { Routes } from 'react-router-dom'
 import UseReducerHook from './components/useReducerHook'
+import UseImperativeHook from './components/ImpertativeHooks/ImperativeHandleHook'
 
 function App() {
   return (
@@ -27,7 +28,8 @@ function App() {
       {/* <Provider> */}
       {/* <UseEffectHook /> */}
       {/* </Provider> */}
-      <UseReducerHook />
+      {/* <UseReducerHook /> */}
+      <UseImperativeHook />
     </>
   )
 }

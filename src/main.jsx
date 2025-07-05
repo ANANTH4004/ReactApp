@@ -8,7 +8,7 @@ import Header from './components/Routing/Header.jsx'
 createRoot(document.getElementById('root')).render(
   // <StrictMode>
   <BrowserRouter>
-    <Header />
+    {/* <Header /> */}
     <App />
   </BrowserRouter>
 
